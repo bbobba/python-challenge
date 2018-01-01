@@ -12,11 +12,11 @@
 #   The dataset is composed of two columns: Date and Profit/Losses.
 
 # Calculate:
-#   The total number of months included in the dataset
-#   The total net amount of "Profit/Losses" over the entire period
-#   The average change in "Profit/Losses" between months over the entire period
-#   The greatest increase in profits (date and amount) over the entire period
-#   The greatest decrease in losses (date and amount) over the entire period
+#   1. The total number of months included in the dataset
+#   2. The total net amount of "Profit/Losses" over the entire period
+#   3. The average change in "Profit/Losses" between months over the entire period
+#   4. The greatest increase in profits (date and amount) over the entire period
+#   5. The greatest decrease in losses (date and amount) over the entire period
 
 # Deliverables:
 #   Print the analysis to the terminal
@@ -37,7 +37,7 @@ csv_path = os.path.join('data', 'budget_data.csv')
 # empty lists
 
 total_months = []
-net_revenue = []
+total_revenue = []
 avg_change = []
 max_profit_date = []
 min_profit_date = []
@@ -47,12 +47,30 @@ min_profit_amount = []
 # Open and read the csv file
 with open(csv_path, newline = '') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
-    # Skip header
+#   Skip header
     csv_header = (csv_reader, None)
 
-    
+"""
+1. The total number of months included in the dataset
+Count the number rows of data in the Date col (len)
+"""
 
-# METHOD 2. See 3>Activities>08-Par_Wrestling>Solved ??
+
+"""
+2. The total net amount of "Profit/Losses" over the entire period
+"""
+
+"""
+3. The average change in "Profit/Losses" between months over the entire period
+"""
+
+"""
+4. The greatest increase in profits (date and amount) over the entire period
+"""
+
+"""
+5. The greatest decrease in losses (date and amount) over the entire period
+"""
 
 # -----------------------------------------------------------------
 # OUTPUT
@@ -60,11 +78,11 @@ with open(csv_path, newline = '') as csv_file:
 # Print results to the terminal:
 #Financial Analysis
 #----------------------------
-#Total Months:
-#Total:
-#Average Change:
-#Greatest Increase in Profits:
-#Greatest Decrease in Profits:
+#print(f'Total Months: {str(total_months)}')
+#print(f'Total: {str(total_revenue)}')
+#print(f'Average Change: {str(avg_change)}')
+#print(f'Greatest Increase in Profits: {str(max_profit_date)} ({str(max_profit_amount)})'
+#print(f'Greatest Decrease in Profits: {str(min_profit_date)} ({str(min_profit_amount)})'
 
 # Export results in a .txt file:
 # SEE 2>Activities>09-Ins_WriteCSV
