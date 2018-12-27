@@ -1,9 +1,8 @@
 
 # PYTHON CHALLENGE: PyBank
 
-
 # -----------------------------------------------------------------
-# INSTRUCTIONS
+# REQUIREMENTS
 
 # Goal:
 #   Create a Python script for analyzing company financial records. See GitHub for details: https://github.com/bbobba/UTAUS201810DATA2/tree/master/03_Python/Homework/Instructions
