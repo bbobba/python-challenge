@@ -6,11 +6,11 @@ import os
 import csv
 
 # Set file path
-# SYNTAX: csvpath = os.path.join('folder', 'filename.csv') 
-budget_data = os.path.join('data', 'budget_data.csv')
+csvpath = os.path.join('data', 'budget_data.csv')
+
+# Declare variables
+
 
 # Read in the csv file
-# SYNTAX:
-with open(csvpath, newline='') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',') 
-    # csvreader specifies the delimiter and the variable that holds the contents
+with open(csvpath, newline = '') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
