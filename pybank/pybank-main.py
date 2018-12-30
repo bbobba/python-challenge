@@ -47,7 +47,8 @@ csv_path = os.path.join('data', 'budget_data.csv')
 with open(csv_path, newline = '') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
 
-    # Skip header for analysis: next(csv_reader, None)
+    # Skip header
+    # #next(csv_reader, None)
 # 
 
 # -----------------------------------------------------------------
