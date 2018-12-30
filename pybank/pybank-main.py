@@ -30,8 +30,12 @@
 import os
 import csv
 
+# Set file path
+csv_path = os.path.join('data', 'budget_data.csv')
+
 # Declare variables
 # empty lists
+
 total_months = []
 net_revenue = []
 avg_change = []
@@ -40,22 +44,20 @@ min_profit_date = []
 max_profit_amount = []
 min_profit_amount = []
 
-# Set file path
-csv_path = os.path.join('data', 'budget_data.csv')
-
 # Open and read the csv file
 with open(csv_path, newline = '') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
-
     # Skip header
-    # #next(csv_reader, None)
-# 
+    csv_header = (csv_reader, None)
+
+    
+
+# METHOD 2. See 3>Activities>08-Par_Wrestling>Solved ??
 
 # -----------------------------------------------------------------
 # OUTPUT
 
 # Print results to the terminal:
-
 #Financial Analysis
 #----------------------------
 #Total Months:
