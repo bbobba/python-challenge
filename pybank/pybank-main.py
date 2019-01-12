@@ -1,8 +1,7 @@
 
-# PYTHON CHALLENGE: PyBank
+#PYTHON CHALLENGE: PyBank
 
-# -----------------------------------------------------------------
-# REQUIREMENTS
+#INSTRUCTIONS
 
 # Goal:
 #   Create a Python script for analyzing company financial records. See GitHub for details: https://github.com/bbobba/UTAUS201810DATA2/tree/master/03_Python/Homework/Instructions
@@ -24,7 +23,7 @@
 
 
 # -----------------------------------------------------------------
-# ANALYSIS
+# SETUP
 
 # Import the necessary dependencies for os.path.join()
 import os
@@ -48,34 +47,35 @@ min_profit_amount = []
 with open(csv_path, newline = '') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
 #   Skip header
-    csv_header = (csv_reader, None)
+    #csv_header = (csv_reader, None)
+    next(csv_reader)
 
-"""
-1. The total number of months included in the dataset
-Count the number rows of data in the Date col (len)
-"""
+# EXPLORATION
 
+# ANALYSIS
 
-"""
-2. The total net amount of "Profit/Losses" over the entire period
-"""
+# 1. The total number of months included in the dataset
+# YOUR CODE HERE
+# Count the number rows of data in the Date col (len)
 
-"""
-3. The average change in "Profit/Losses" between months over the entire period
-"""
+# 2. The total net amount of "Profit/Losses" over the entire period
+# YOUR CODE HERE
 
-"""
-4. The greatest increase in profits (date and amount) over the entire period
-"""
+# 3. The average change in "Profit/Losses" between months over the entire period
+# YOUR CODE HERE
 
-"""
-5. The greatest decrease in losses (date and amount) over the entire period
-"""
+# 4. The greatest increase in profits (date and amount) over the entire period
+# YOUR CODE HERE
+
+# 5. The greatest decrease in losses (date and amount) over the entire period
+# YOUR CODE HERE
 
 # -----------------------------------------------------------------
-# OUTPUT
+# PRESENTATION
 
 # Print results to the terminal:
+# YOUR CODE HERE
+
 #Financial Analysis
 #----------------------------
 #print(f'Total Months: {str(total_months)}')
@@ -85,5 +85,6 @@ Count the number rows of data in the Date col (len)
 #print(f'Greatest Decrease in Profits: {str(min_profit_date)} ({str(min_profit_amount)})'
 
 # Export results in a .txt file:
+# YOUR CODE HERE
 # SEE 2>Activities>09-Ins_WriteCSV
 
