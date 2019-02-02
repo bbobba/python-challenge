@@ -35,13 +35,13 @@ csv_path = os.path.join('data', 'budget_data.csv')
 # Declare variables
 # empty lists
 
-total_months = []
-total_revenue = []
-avg_change = []
-max_profit_date = []
-min_profit_date = []
-max_profit_amount = []
-min_profit_amount = []
+total_months = 
+total_revenue = 
+avg_change = 
+max_profit_date = 
+min_profit_date = 
+max_profit_amount = 
+min_profit_amount = 
 
 # Open and read the csv file
 with open(csv_path, newline = '') as csv_file:
