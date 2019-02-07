@@ -52,4 +52,3 @@ with open(csv_path, newline = '') as csv_file:
 
 
 # Export results in a .txt file:
-# SEE 2>Activities>09-Ins_WriteCSV
