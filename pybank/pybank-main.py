@@ -49,7 +49,7 @@ net_profit = sum(profit_loss)
 # 3. The average change in "Profit/Losses" between months over the entire period
 for i in range(1, len(profit_loss)):
     change.append(profit_loss[i] - profit_loss[i-1])
-​
+
 average_change = round(sum(change)/len(change),2)
     
 # Test print
@@ -60,7 +60,7 @@ average_change = round(sum(change)/len(change),2)
 max_change = max(change)
 max_index = change.index(max_change)
 max_date = dates[max_index + 1]
-​
+
 # Test print
 # print(f'Greatest Increase in Profits: {max_date} (${max_change})')
 
@@ -69,7 +69,7 @@ max_date = dates[max_index + 1]
 min_change = min(change)
 min_index = change.index(min_change)
 min_date = dates[min_index + 1]
-​
+
 # Test print
 # print(f'Greatest Decrease in Profits: {min_date} (${min_change})')
 
