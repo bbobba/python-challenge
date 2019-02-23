@@ -89,7 +89,7 @@ with open(output_file,'w') as txt_file:
     # Calculate the percentage of votes and total number of votes each candidate won
     for i in range(0, len(unique_candidates)):
         candidate_votes.append(candidate_name.count(unique_candidates[i]))
-        candidate_percentage.append(candidate_name.count(unique_candidates[i])/total_votes*100)
+        candidate_percentage.append(candidate_name.count(unique_candidates[i]) / total_votes * 100)
         candidate_summary = f'{unique_candidates[i]}: {candidate_percentage[i]:0.3f}% ({candidate_votes[i]})\n'
         
         # Print candidate summary to the terminal
