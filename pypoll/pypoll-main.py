@@ -60,9 +60,9 @@ with open(csv_path, newline='') as csv_file:
         
         # Append candidate names to new list
         candidate_name.append(row[2])
-        
+
         # Tally votes
-        total_votes = total_votes + 1
+        total_votes += 1
 
 # Find unique candidates who recieved votes and store in a list
 for candidate in candidate_name:
@@ -82,19 +82,19 @@ with open(output_file,'w') as txt_file:
     Total Votes: {total_votes}\n\
     ----------------------------')
     print(election_summary)
-    
+
     # Save election summary in the text file
     txt_file.write(election_summary)
-    
+
     # Calculate the percentage of votes and total number of votes each candidate won
-    for i in range(0, len(unique_candidates)):
+    for i in range(len(unique_candidates)):
         candidate_votes.append(candidate_name.count(unique_candidates[i]))
         candidate_percentage.append(candidate_name.count(unique_candidates[i]) / total_votes * 100)
         candidate_summary = f'{unique_candidates[i]}: {candidate_percentage[i]:0.3f}% ({candidate_votes[i]})\n'
-        
+
         # Print candidate summary to the terminal
         print(candidate_summary, end='')
-        
+
         # Save candidate summary in the text file
         txt_file.write(candidate_summary)
 
@@ -109,7 +109,7 @@ with open(output_file,'w') as txt_file:
     Winner: {winner_name}\n\
     ----------------------------')
     print(winner_summary)
-    
+
     # Save winner summary in the text file
     txt_file.write(winner_summary)
 
